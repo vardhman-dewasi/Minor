@@ -15,7 +15,7 @@ function submitForm() {
     //     return;
     // }
 
-    fetch('/submit', {
+    fetch('https://minor-uuxg.onrender.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -36,7 +36,7 @@ function submitForm() {
 
 // JavaScript code for "Show All Registrations"
 function showAllRegistrations() {
-    fetch('/registrations')
+    fetch('https://minor-uuxg.onrender.com/registrations')
         .then(response => response.json())
         .then(data => {
             const registrationsDiv = document.getElementById('registrations');
